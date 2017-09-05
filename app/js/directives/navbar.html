@@ -1,0 +1,40 @@
+<div ng-controller="NavbarController" layout="column" ng-cloak>
+        
+    <section layout="row" flex>
+
+    <md-content flex>
+        <div layout="column" layout-align="top end center">
+            <div class="menu-button">
+                <md-button ng-click="toggleRight()" class="md-primary">
+                    Toggle right
+                </md-button>
+            </div>
+        </div>
+
+        <div flex></div>
+
+    </md-content>
+
+    <md-sidenav class="md-sidenav-right md-whiteframe-4dp" md-component-id="right">
+
+        <md-toolbar class="md-theme-light">
+            <h1 class="md-toolbar-tools">Sidenav Right</h1>
+        </md-toolbar>
+
+        <md-content ng-controller="RightCtrl" layout-padding>
+            <form class="sidebar-links">
+                <md-button href="/">HOME</md-button><md-divider></md-divider>
+                <md-button href="/anotherpage.html">ANOTHER PAGE</md-button><md-divider></md-divider>
+                <md-button href="#">LINK 3</md-button><md-divider></md-divider>
+                <md-button href="#">LINK 4</md-button><md-divider></md-divider>
+            </form>
+            <md-button ng-click="close()" class="md-primary">
+                Close Sidenav Right
+            </md-button>
+        </md-content>
+
+    </md-sidenav>
+
+    </section>
+
+</div>

@@ -1,0 +1,14 @@
+<div ng-controller="CardController">
+    <div class="row all-cards">
+        <div class="col-sm-4 box" ng-repeat="item in items | searchCards: searchString">
+            <div class="card">
+            <div class="card-block">
+                <h3 class="card-title">{{item.title}}</h3>
+                <a href="{{name.ref}}" class="card-text">{{item.content}}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-secondary">Go somewhere</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
