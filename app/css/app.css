@@ -68,3 +68,15 @@ my-navbar .menu-button{
 .clear{
     clear: both;
 }
+
+.search-bar form{
+    margin-bottom: 0;
+}
+
+md-list-item{
+    transition: all 0.5s cubic-bezier(.25,.9,.25,1);
+}
+
+md-list-item:hover{
+    box-shadow: 0 0 10px #00DCFF, 0 0 10px #00DCFF;
+}

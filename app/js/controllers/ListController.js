@@ -1,46 +1,49 @@
 mainApp
-.config(function($mdIconProvider) {
-  $mdIconProvider
-    .iconSet('communication', 'img/icons/sets/communication-icons.svg', 24);
-})
-.controller('ListController', function($scope) {
-    var imagePath = '/img/profile.jpg';
+.controller('ListController', function($scope, $mdDialog) {
 
+    this.openMenu = function($mdMenu, ev) {
+      $mdMenu.open(ev);
+    };
+
+    var imagePath = '/img/profile.jpg';
+    
     $scope.listEntries = [
       {
         face : imagePath,
+        what: 'Something\'s Happening',
+        who: 'Person 1',
+        when: '3:08PM',
+        notes: "asdljkfhaluisefhalsejhflksuajhdf"
+      },
+      {
+        face : imagePath,
         what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        who: 'Billy Bob Joe',
         when: '3:08PM',
         notes: " I'll be in your neighborhood doing errands"
       },
       {
         face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        what: 'I\'m dead',
+        who: 'Jane Doe',
         when: '3:08PM',
         notes: " I'll be in your neighborhood doing errands"
       },
       {
         face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        what: 'My album is the best',
+        who: 'Frank Ocean',
         when: '3:08PM',
         notes: " I'll be in your neighborhood doing errands"
       },
       {
         face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
-        when: '3:08PM',
-        notes: " I'll be in your neighborhood doing errands"
-      },
-      {
-        face : imagePath,
-        what: 'Brunch this weekend?',
-        who: 'Min Li Chan',
+        what: 'Still sitting on the toilet',
+        who: 'Poopy Poop Boy',
         when: '3:08PM',
         notes: " I'll be in your neighborhood doing errands"
       },
     ];
+
+
 });
